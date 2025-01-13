@@ -137,6 +137,8 @@ function App() {
                 color={e?.color}
                 image={e.image}
                 identifier={index}
+                textColor={e.textColor}
+                bgColor={e.bgColor}
               />
             ))}
           </div>
