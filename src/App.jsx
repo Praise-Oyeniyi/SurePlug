@@ -127,7 +127,7 @@ function App() {
           <div className="left md:w-3/6 w-full md:self-center space-y-5">
             <h3 className='text-3xl md:text-5xl font-bold text-white text-center md:text-left'>Try <span className='underline'>SurePlug</span> for free on iOS and Android</h3>
 
-            <div className='flex justify-center md:justify-between w-fit mx-auto items-center gap-x-3 text-xs md:text-xl font-normal text-black'>
+            <div className='flex justify-center md:justify-between w-fit mx-auto md:mx-0 items-center gap-x-3 text-xs md:text-xl font-normal text-black'>
               <button className='bg-white flex items-center gap-x-2 rounded-full px-6 py-2 md:px-8 md:py-3'>
                 <FaApple size={20}/>
                 App Store

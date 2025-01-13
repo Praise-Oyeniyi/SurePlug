@@ -27,8 +27,8 @@ const Header = () => {
           
 
           <div className='hidden md:flex items-center gap-x-2 text-lg font-normal '>
-            <button className='sign in px-4 py-2 border border-white rounded-full transition-all ease-linear duration-300 hover:bg-white hover:text-[#6840ED] hover:scale-[1.01]'>Sign In</button>
-            <button className='rounded-full bg-white px-4 border border-transparent py-2 transition-all ease-linear duration-300 text-[#6840ED] hover:bg-[#6840ed57] hover:scale-[1.01] hover:border-white'>Create An Account</button>
+            <button className='sign in px-4 py-2 border border-white rounded-full transition-all ease-linear duration-300 hover:bg-zinc-200 hover:text-[#6840ED] hover:scale-[1.01]'>Sign In</button>
+            <button className='rounded-full bg-white px-4 border border-transparent py-2 transition-all ease-linear duration-300 text-[#6840ED] hover:bg-zinc-200 hover:scale-[1.01] hover:border-white'>Create An Account</button>
           </div>
 
           <HiOutlineMenuAlt3 size={35} className={`text-white md:hidden cursor-pointer p-1 transition-all ease-linearduration-300 ${active?'fixed':''} bg-[#6840ed83] right-5 top-8 z-[999] rounded-sm`} onClick={()=>setActive(!active)}/>
@@ -50,7 +50,7 @@ const Header = () => {
 
             <h4 className='font-normal text-[0.93rem] md:text-2xl'>Fast, Secure, and Convenient for All Your Needs.</h4>
             
-            <div className='flex w-5/6 md:w-fit items-center gap-x-2 mt-2'>
+            <div className='flex w-5/6 md:w-4/6 items-center gap-x-2 mt-2'>
               <button>
                 <img src={Ios} alt="sureplug home UI" className='w-fit ' />
               </button>
