@@ -10,7 +10,7 @@ const Footer = () => {
     <footer className='w-full'>
         <div className='w-[90%] mx-auto flex flex-col md:flex-row justify-between items-start text-black font-normal text-[0.93rem] md:text-2xl'>
           <div className="logo-area md:w-2/6 w-full space-y-5">
-            <img src={FooterL} alt="" className="object-contain w-fit" />
+            <img src={FooterL} alt="" className="object-contain w-fit h-[33.49px] md:h-fit" />
             <p>SurePlug is a trusted payment platform that allows users to easily and securely pay for bills and subscriptions, including electricity, internet, airtime, data bundles, cable TV, education fees, and more.</p>
 
           </div>
@@ -20,7 +20,7 @@ const Footer = () => {
             <h5>Hello@sureplug.ng</h5>
           </div>
 
-          <div className='space-y-3'>
+          <div className='space-y-3 pb-3 md:pb-0'>
             <h5 className='flex items-center gap-x-2'><FaXTwitter />Twitter</h5>
             <h5 className='flex items-center gap-x-2'><FaFacebookF />Facebook</h5>
           </div>

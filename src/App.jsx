@@ -10,6 +10,8 @@ import ChoiceSection from './components/ChoiceSection';
 import { Choice } from './Data/ChoiceData';
 import Header from './components/Header';
 import Footer from './components/Footer';
+import Brands from './components/Brands';
+
 
 function App() {
   return (
@@ -26,7 +28,7 @@ function App() {
             <h3 className='text-3xl md:text-5xl  font-bold'>
               Everything You Need, All in One App
             </h3>
-            <p className='md:w-3/6 mx-auto font-normal text-[0.93rem] md:text-2xl'>From airtime and data to streaming subscriptions and flight bookings, SurePlug simplifies all your payments in one place.</p>
+            <p className='md:w-4/6 mx-auto font-normal text-[0.93rem] md:text-2xl'>From airtime and data to streaming subscriptions and flight bookings, SurePlug simplifies all your payments in one place.</p>
           </div>
         
 
@@ -50,16 +52,9 @@ function App() {
 
       </div>
       
-      <div className='w-full bg-white py-10'>
-        <h3 className='text-3xl md:text-5xl font-bold pb-10 text-center md:w-3/6 mx-auto '>Over 30+ Service Providers and Brands Connected to <span className='underline text-[#6840ED]'>SurePlug</span></h3>
-
-        <div className='w-full '>
-          <div className="brand-top overflow-x-auto">
-
-          </div>
-        </div>
-
-      </div>
+      <Brands/>
+      
+      
 
       <div className='w-full bg-[#EFEFEF] py-10 pb-14'>
         <div className='text-center py-2 pb-10 space-y-4'>
