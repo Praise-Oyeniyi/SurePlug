@@ -1,30 +1,37 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { FaArrowRightLong } from "react-icons/fa6";
 import HeadL from '../images/header-logo.svg'
 import HeadIcon from '../images/heroIcon.svg'
 import Phone from '../images/hero-phone.png'
 import Play from '../images/play.svg'
 import Ios from '../images/ios.svg'
+import { HiOutlineMenuAlt3 } from "react-icons/hi";
 
 const Header = () => {
+    const [active, setActive]= useState(false);
+
   return (
-    <div className="bg-[url('./images/hero.png')] bg-center bg-[#6840ED] text-white py-7 md:py-10">
-        <header className=' flex items-center justify-between w-[90%] mx-auto pb-7'>
+    <div className="w-full bg-[url('./images/hero.png')] bg-center bg-[#6840ED] text-white py-7 md:py-10">
+        <header className=' flex items-center justify-between w-[90%] mx-auto pb-7 z-30'>
           <div className='logo h-[33.49px] md:h-fit'>
             <img src={HeadL} alt="" className='object-contain w-fit'/>
           </div>
-
-          <ul className='items-center gap-x-7 w-fit text-xl font-normal hidden md:flex'>
-            <li>About</li>
-            <li>FAQs</li>
-            <li>Contact Us</li>
-            <li>Become An Agent</li>
-          </ul>
+        
+            
+            <ul className='items-center gap-x-7 w-fit text-xl font-normal hidden md:flex'>
+                <li>About</li>
+                <li>FAQs</li>
+                <li>Contact Us</li>
+                <li>Become An Agent</li>
+            </ul>
+          
 
           <div className='hidden md:flex items-center gap-x-2 text-lg font-normal '>
             <button className='sign in px-4 py-2 border border-white rounded-full transition-all ease-linear duration-300 hover:bg-white hover:text-[#6840ED] hover:scale-[1.01]'>Sign In</button>
-            <button className='rounded-full bg-white px-4 border border-transparent py-2 transition-all ease-linear duration-300 text-[#6840ED] hover:bg-[#6840ED] hover:text-white hover:scale-[1.01] hover:border-white'>Create An Account</button>
+            <button className='rounded-full bg-white px-4 border border-transparent py-2 transition-all ease-linear duration-300 text-[#6840ED] hover:bg-[#6840ed57] hover:scale-[1.01] hover:border-white'>Create An Account</button>
           </div>
+
+          <HiOutlineMenuAlt3 size={35} className={`text-white md:hidden cursor-pointer p-1 transition-all ease-linearduration-300 ${active?'fixed':''} bg-[#6840ed83] right-5 top-8 z-[999] rounded-sm`} onClick={()=>setActive(!active)}/>
         </header>
 
 
@@ -60,6 +67,15 @@ const Header = () => {
 
           
         </div>
+
+        <div className={`w-screen h-screen fixed top-0  bg-white md:hidden z-50 transition-all ease-linearduration-300 ${active?'left-0': '-left-full'}`}>
+          <ul className='text-black h-4/6 flex w-full flex-col justify-evenly items-center z-10 mt-7'>
+              <li>About</li>
+              <li>FAQs</li>
+              <li>Contact Us</li>
+              <li>Become An Agent</li>
+          </ul>
+      </div>
     </div>
   )
 }

@@ -15,7 +15,7 @@ import Brands from './components/Brands';
 
 function App() {
   return (
-    <div className="w-full font-Aeonik">
+    <div className="w-full font-Aeonik overflow-x-hidden">
       <Header/>
 
       <div className="everything py-10 relative bg-[#D9CEFF]">
@@ -51,7 +51,7 @@ function App() {
         </div>
 
       </div>
-      
+
       <Brands/>
       
       
