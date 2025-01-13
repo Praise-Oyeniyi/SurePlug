@@ -63,13 +63,13 @@ function App() {
 
       <div className='w-full bg-[#EFEFEF] py-10 pb-14'>
         <div className='text-center py-2 pb-10 space-y-4'>
-          <h3 className='text-3xl md:text-5xl  font-bold'>
+          <h3 className='w-[90%] mx-auto text-3xl md:text-5xl  font-bold'>
             Your Best Choice for Seamless Bill Payments
           </h3>
-          <p className='md:w-3/6 mx-auto font-normal text-[0.93rem] md:text-2xl'>Discover the features that make SurePlug the ultimate solution for all your bill payment needs.</p>
+          <p className='md:w-3/6 w-5/6 mx-auto font-normal text-[0.93rem] md:text-2xl'>Discover the features that make SurePlug the ultimate solution for all your bill payment needs.</p>
         </div>
 
-        <div className='w-5/6 mx-auto'>
+        <div className='md:w-5/6 w-[90%] mx-auto'>
           <div className='w-full flex flex-wrap justify-between gap-5'>
             {Choice.map((e, index)=>(
               <ChoiceSection 
@@ -92,7 +92,7 @@ function App() {
           <div className="left md:w-3/6 w-full">
             <h3 className='text-3xl md:text-5xl font-bold pb-7'>3 Easy Steps to Get Started with<span className='underline text-[#6840ED]'>SurePlug.</span></h3>
 
-            <ol className='space-y-5 md:space-y-3 list-[value] pl-5 step-list'>
+            <ol className='space-y-5 md:space-y-3 list-[value] pl-8 md:pl-5 step-list'>
               <li className='text-black'>
                 <h4 className='text-base md:text-2xl font-bold pb-2'>Download and Install the App</h4>
                 <p className='text-[0.93rem] md:text-2xl font-normal'>Head to your app store, search for "SurePlug," and download it onto your mobile device.</p>
@@ -106,7 +106,7 @@ function App() {
                 <p className='text-[0.93rem] md:text-2xl font-normal'>Top up your account and instantly begin paying your bills with ease. It’s that straightforward!</p>
               </li>
             </ol>
-            <button className='bg-[#6840ED] text-white rounded-full text-xl font-normal mt-7 flex items-center gap-x-5 px-5 py-3'>Get the app <span><FaArrowRightLong size={20}/></span></button>
+            <button className='bg-[#6840ED] text-white rounded-full text-xs md:text-xl font-normal mt-7 flex items-center gap-x-5 px-5 py-3'>Get the app <span><FaArrowRightLong size={20}/></span></button>
           </div>
           
 

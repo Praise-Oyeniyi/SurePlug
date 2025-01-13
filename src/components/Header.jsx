@@ -8,7 +8,7 @@ import Ios from '../images/ios.svg'
 
 const Header = () => {
   return (
-    <div className="bg-[url('./images/hero.png')] bg-center bg-[#6840ED] text-white py-10">
+    <div className="bg-[url('./images/hero.png')] bg-center bg-[#6840ED] text-white py-7 md:py-10">
         <header className=' flex items-center justify-between w-[90%] mx-auto pb-7'>
           <div className='logo '>
             <img src={HeadL} alt="" className='object-contain w-fit'/>
@@ -30,9 +30,9 @@ const Header = () => {
 
 
         <div className='hero w-[90%] mx-auto flex flex-col md:flex-row justify-between pb-7 gap-y-20 md:gap-y-0'>
-          <div className='hero-left w-full md:w-3/6 pt-16 space-y-4'>
+          <div className='hero-left w-full md:w-3/6 pt-7 md:pt-16 space-y-4'>
             <h4 className='w-fit flex items-center gap-x-2 md:gap-x-3 bg-white md:px-6 px-4 py-1 rounded-full text-black text-[0.93rem]' >
-              <span><img src={HeadIcon} alt="" className='object-fit w-[2.87rem]'/></span>
+              <span><img src={HeadIcon} alt="" className='object-fit w-7 md:w-[2.87rem]'/></span>
                 Sureplug is now available on Appstore
               <FaArrowRightLong/>
             </h4>
@@ -43,7 +43,7 @@ const Header = () => {
 
             <h4 className='font-normal text-[0.93rem] md:text-2xl'>Fast, Secure, and Convenient for All Your Needs.</h4>
             
-            <div className='flex w-fit items-center gap-x-2 mt-2'>
+            <div className='flex w-5/6 md:w-fit items-center gap-x-2 mt-2'>
               <button>
                 <img src={Ios} alt="sureplug home UI" className='w-fit ' />
               </button>

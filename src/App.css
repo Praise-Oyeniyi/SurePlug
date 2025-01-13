@@ -22,3 +22,21 @@
   top: -.3rem;
   border-radius: 100%;
 }
+
+@media (max-width:767px) {
+  .step-list li::marker {
+    font-size: 0.93rem;
+}
+
+.step-list li::before {
+  content: '';
+  position:absolute;
+  background: #6840ED;
+  height: 2rem;
+  width:2rem;
+  z-index: -1;
+  left: -1.6rem;
+  top: -.15rem;
+  border-radius: 100%;
+}
+}
