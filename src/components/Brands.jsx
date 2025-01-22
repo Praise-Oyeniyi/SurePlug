@@ -4,8 +4,8 @@ import { BrandIcons } from '../Data/BrandIcons';
 
 const Brands = () => {
   return (
-    <div className='w-full bg-white py-20'>
-        <h3 className='text-3xl md:text-5xl font-bold pb-14 text-center md:w-3/6 mx-auto '>Over 30+ Service Providers and Brands Connected to <span className='underline text-[#6840ED]'>SurePlug</span></h3>
+    <div className='md:w-full w-[90%] mx-auto bg-white py-14 md:py-20'>
+        <h3 className='text-3xl md:text-5xl font-bold pb-14 text-center md:w-3/6 mx-auto underline-offset-4'>Over 30+ Service Providers and Brands Connected to <span className='underline text-[#6840ED]'>Sureplug</span></h3>
 
         <div className='w-full space-y-3 md:space-y-5'>
             <motion.div 
@@ -23,7 +23,7 @@ const Brands = () => {
                 }}
                 >
                 {[...BrandIcons.topIcons, ...BrandIcons.topIcons].map((e, index) => (
-                    <div key={index} className="min-w-[4rem] max-w-[5rem] md:min-w-[10rem] md:max-w-[10.81rem] flex-shrink-0 shadow-sm rounded-3xl">
+                    <div key={index} className="min-w-[4rem] max-w-[5rem] md:min-w-[8rem] md:max-w-[8.5rem] flex-shrink-0 shadow-sm rounded-3xl">
                         <img src={e} alt="" className='w-full object-contain'/>
                     </div>
                 ))}
