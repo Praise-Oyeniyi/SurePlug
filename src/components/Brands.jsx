@@ -44,7 +44,7 @@ const Brands = () => {
                 }}
             >
                 {[...BrandIcons.bottomIcons, ...BrandIcons.bottomIcons].map((e, index) => (
-                    <div key={index} className="min-w-[4rem] max-w-[5rem] md:min-w-[10rem] md:max-w-[10.81rem] flex-shrink-0 shadow-sm rounded-3xl">
+                    <div key={index} className="min-w-[4rem] max-w-[5rem] md:min-w-[8rem] md:max-w-[8.5rem] flex-shrink-0 shadow-sm rounded-3xl">
                         <img src={e} alt="" className='w-full object-contain'/>
                     </div>
                 ))}
