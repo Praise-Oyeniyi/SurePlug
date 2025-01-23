@@ -16,8 +16,8 @@ const Footer = () => {
           </div>
 
           <div className='space-y-3 my-7 md:my-0'>
-            <h5 >(+234) 703 953 3752</h5>
-            <h5>hello@Sureplug.ng</h5>
+            <h5 >(+234) 813 214 1796</h5>
+            <h5>hello@sureplug.ng</h5>
           </div>
 
           <div className='space-y-3 pb-3 md:pb-0'>

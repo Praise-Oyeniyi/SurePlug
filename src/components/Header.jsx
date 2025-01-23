@@ -74,6 +74,9 @@ const Header = () => {
               <li>FAQs</li>
               <li>Contact Us</li>
               <li>Become An Agent</li>
+              <hr className='border border-[#6840ed34] w-4/6 mx-auto'/>
+              <li>Sign In</li>
+              <li>Create An Account</li>
           </ul>
       </div>
     </div>
